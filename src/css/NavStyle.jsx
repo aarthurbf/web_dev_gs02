@@ -56,6 +56,11 @@ export const NavStyle = styled.section`
       display: block;
     }
 
+    .logo{
+      width: 3rem;
+      height: 3rem;
+    }
+
     .header ul {
       flex-direction: column;
       position: absolute;
@@ -88,6 +93,11 @@ export const NavStyle = styled.section`
   @media (max-width: 425px) {
     .header .logo {
       width: 50%;
+    }
+
+    .logo{
+      height: 4rem;
+      width: 4rem;
     }
 
     .header ul {
