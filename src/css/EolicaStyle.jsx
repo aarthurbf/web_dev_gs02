@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Eolica from "../assets/images/eolica1.jpg";
+import Eolica from "../assets/images/Eolica1.jpg";
 
 export const EolicaStyle = styled.section`
   .banner {
