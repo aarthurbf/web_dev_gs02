@@ -6,8 +6,8 @@ export const NavStyle = styled.section`
   }
 
   .logo {
-    width: 40%;
-    height: 40%;
+    width: 10%;
+    height: 10%;
   }
 
   .header .header-container {
