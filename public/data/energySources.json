@@ -1,0 +1,28 @@
+[
+    {
+      "img": "/assets/images/eolica.jpg",
+      "title": "Energia Eólica",
+      "description": "A energia eólica utiliza a força do vento para gerar eletricidade de forma limpa e renovável.",
+      "link": "/energiaeolica"
+    },
+    {
+      "img": "/assets/images/solar.jpg",
+      "title": "Energia Solar",
+      "description": "A energia solar aproveita a luz do sol para produzir eletricidade ou calor, sendo uma das fontes mais sustentáveis.",
+      "link": "/energiasolar"
+    },
+    {
+        "img": "/assets/images/hidroeletrica.jpg",
+        "title": "Energia Hidráulica",
+        "description":
+        "A energia hidráulica utiliza o movimento da água, como em rios e barragens, para gerar eletricidade.",
+        "link": "/energiahidraulica"
+    },
+    {
+        "img": "/assets/images/nuclear.jpg",
+        "title": "Energia Nuclear",
+        "description":
+        "A energia nuclear utiliza reações atômicas para gerar grandes quantidades de energia de forma contínua.",
+        "link": "/energianuclear"
+    }
+]

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HomeStyle } from "../css/HomeStyle";
 import { FaLeaf, FaWind, FaSolarPanel, FaWater } from "react-icons/fa";
 import EolicaImg from "../assets/images/eolica.jpg";
@@ -7,38 +7,19 @@ import SolarImg from "../assets/images/solar.jpg";
 import HidraulicaImg from "../assets/images/hidroeletrica.jpg";
 import NuclearImg from "../assets/images/nuclear.jpg";
 
-const energySources = [
-  {
-    img: EolicaImg,
-    title: "Energia Eólica",
-    description:
-      "A energia eólica utiliza a força do vento para gerar eletricidade de forma limpa e renovável.",
-    link: "/energiaeolica",
-  },
-  {
-    img: SolarImg,
-    title: "Energia Solar",
-    description:
-      "A energia solar aproveita a luz do sol para produzir eletricidade ou calor, sendo uma das fontes mais sustentáveis.",
-    link: "/energiasolar",
-  },
-  {
-    img: HidraulicaImg,
-    title: "Energia Hidráulica",
-    description:
-      "A energia hidráulica utiliza o movimento da água, como em rios e barragens, para gerar eletricidade.",
-    link: "/energiahidraulica",
-  },
-  {
-    img: NuclearImg,
-    title: "Energia Nuclear",
-    description:
-      "A energia nuclear utiliza reações atômicas para gerar grandes quantidades de energia de forma contínua.",
-    link: "/energianuclear",
-  },
-];
-
 const Home = () => {
+  const [energySources, setEnergySources] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("/data/energySources.json"); 
+      const data = await response.json();
+      setEnergySources(data);
+    };
+    
+    fetchData();
+  }, []);
+
   const images = [EolicaImg, NuclearImg, SolarImg, HidraulicaImg];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -123,7 +104,7 @@ const Home = () => {
         <div className="produto-list">
           {energySources.map((source, index) => (
             <div key={index} className="produto-item">
-              <img src={source.img} alt={source.title} />
+              <img src={source.img} alt={source.title} />{" "}
               <h3>{source.title}</h3>
               <p>{source.description}</p>
               <Link to={source.link} className="btn">
