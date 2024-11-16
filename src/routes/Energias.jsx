@@ -10,7 +10,7 @@ const energySources = [
     img: EolicaImg,
     title: "Energia Eólica",
     description: "A energia eólica utiliza a força do vento para gerar eletricidade de forma limpa e renovável.",
-    link: "/energieolica"
+    link: "/energiaeolica"
   },
   {
     img: SolarImg,
