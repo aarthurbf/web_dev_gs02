@@ -8,6 +8,7 @@ import Error from './routes/Error.jsx'
 import Car from './routes/Car.jsx'
 import Energias from './routes/Energias.jsx'
 import Eolica from './routes/Eolica.jsx'
+import Solar from './routes/Solar.jsx'
 import Selection from './routes/Selection.jsx'
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: '/car', element: <Car /> },
       { path: '/energias', element: <Energias /> },
       { path: '/energiaeolica', element: <Eolica/>},
+      { path: '/energiasolar', element: <Solar/>},
       { path: '/selection', element: <Selection /> },
     ]
   }
