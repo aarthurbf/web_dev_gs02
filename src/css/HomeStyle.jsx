@@ -116,23 +116,23 @@ export const HomeStyle = styled.section`
   }
 
   .highlight {
-    background-color: var(--color4); 
-    padding: 8rem; 
+    background-color: var(--color4);
+    padding: 8rem;
     text-align: center;
-    color: white; 
+    color: white;
   }
 
   .highlight h2 {
-    font-size: 2.3rem; 
+    font-size: 2.3rem;
     margin-bottom: 5rem;
     color: white;
   }
 
   .highlight-content {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
   }
 
   .highlight-content div {
@@ -141,29 +141,30 @@ export const HomeStyle = styled.section`
   }
 
   .highlight-content .icon {
-    font-size: 4rem; 
+    font-size: 4rem;
     color: white;
     margin-bottom: 1rem;
   }
 
   .info-section {
-    padding: 4rem 2rem; 
-    background-color: var(--color3); 
+    padding: 4rem 2rem;
+    background-color: var(--color3);
     text-align: center;
     color: white;
   }
 
   .info-section h2 {
-    font-size: 2.5rem; /* Título maior */
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
 
   .info-section p {
-    font-size: 1.2rem; /* Texto maior */
-    max-width: 600px; /* Limita a largura do texto */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
   }
+
   .selection-form {
     display: flex;
     justify-content: center;
@@ -219,6 +220,7 @@ export const HomeStyle = styled.section`
     background: var(--color5);
   }
 
+  /* Responsividade */
   @media screen and (max-width: 768px) {
     .produto-item {
       max-width: 25rem;
@@ -226,6 +228,26 @@ export const HomeStyle = styled.section`
 
     .produto-title {
       font-size: 6vmin;
+    }
+
+    .highlight {
+      padding: 4rem;
+    }
+
+    .highlight h2 {
+      font-size: 2rem;
+    }
+
+    .highlight-content div {
+      max-width: 200px;
+    }
+
+    .info-section h2 {
+      font-size: 2rem;
+    }
+
+    .info-section p {
+      font-size: 1rem;
     }
   }
 
@@ -237,7 +259,23 @@ export const HomeStyle = styled.section`
     }
 
     .produto-title {
-      font-size: 10vmin;
+      font-size: 8vmin;
+    }
+
+    .highlight {
+      padding: 2rem;
+    }
+
+    .highlight-content .icon {
+      font-size: 3rem;
+    }
+
+    .info-section h2 {
+      font-size: 1.8rem;
+    }
+
+    .info-section p {
+      font-size: 0.9rem;
     }
   }
 `;
