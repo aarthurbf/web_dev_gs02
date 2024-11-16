@@ -1,5 +1,5 @@
 import { SobreStyle } from "../css/SobreStyle";
-import imageSobre  from "../assets/images/Nuclear1.jpg";
+import imageSobre from "../assets/images/Nuclear1.jpg";
 
 const Sobre = () => {
   return (
@@ -7,12 +7,14 @@ const Sobre = () => {
       <div className="heading-sobre">
         <h1>Sobre Nós</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          praesentium, veniam modi rem tempore a. Porro minus nisi veniam
-          deleniti harum asperiores quae voluptatem dolorum reprehenderit rem
-          eaque temporibus, consectetur quas a provident. Ea, veritatis ex!
-          Soluta, voluptatum veniam asperiores, quisquam, ex maiores vero
-          ratione aut harum impedit iusto dicta?
+          Somos apaixonados por um futuro mais limpo e sustentável. Nosso
+          objetivo é conscientizar e educar sobre a importância de adotar fontes
+          de energia renováveis e tecnologias sustentáveis, promovendo um
+          impacto positivo no meio ambiente e nas gerações futuras. Acreditamos
+          que cada passo dado em direção ao uso responsável de recursos naturais
+          é um passo na construção de um planeta mais saudável. Trabalhamos para
+          compartilhar conhecimento, apoiar iniciativas sustentáveis e inspirar
+          mudanças em larga escala.
         </p>
       </div>
       <div className="container-sobre">
@@ -21,14 +23,16 @@ const Sobre = () => {
             <img src={imageSobre} alt="" />
           </div>
           <div className="sobre-content">
-            <h2>Nossa História</h2>
+            <h2>A História das Energias Sustentáveis</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laboriosam officiis sint praesentium facilis natus fugit vitae sed
-              mollitia velit iure, deserunt hic asperiores voluptatum ullam vero
-              dolorem nihil. Optio quam ex doloremque. Amet, esse id eaque culpa
-              obcaecati voluptates ut non tempora blanditiis molestiae aliquid,
-              fuga debitis error, magni aliquam?
+              Desde a Revolução Industrial, o mundo tem dependido amplamente de
+              combustíveis fósseis, como carvão, petróleo e gás natural, para
+              impulsionar seu desenvolvimento. No entanto, essas fontes de
+              energia não renováveis têm causado sérios impactos ambientais,
+              incluindo aquecimento global, poluição do ar e esgotamento de
+              recursos. A busca por alternativas mais limpas e renováveis
+              começou no século XX, motivada por crises de petróleo e crescente
+              preocupação ambiental.
             </p>
           </div>
         </section>
