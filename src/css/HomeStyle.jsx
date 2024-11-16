@@ -116,49 +116,55 @@ export const HomeStyle = styled.section`
   }
 
   .highlight {
-    background-color: #f4f4f4;
-    padding: 2rem;
+    background-color: var(--color4); /* Fundo colorido */
+    padding: 8rem; /* Espaço maior */
     text-align: center;
-    height: 30rem;
-    width: 100%;
+    color: white; /* Texto branco */
   }
 
   .highlight h2 {
-    font-size: 2rem;
-    color: var(--color5);
-    margin-bottom: 1.5rem;
+    font-size: 2.3rem; /* Título maior */
+    margin-bottom: 5rem;
+    color: white;
   }
 
   .highlight-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    display: flex; /* Alinha os elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
+    justify-content: center; /* Centraliza os elementos */
+    gap: 2rem; /* Espaçamento entre os elementos */
+  }
+
+  .highlight-content div {
+    max-width: 250px; /* Limita a largura dos itens */
+    text-align: center;
   }
 
   .highlight-content .icon {
-    font-size: 3rem;
-    color: var(--color4);
-    margin-bottom: 0.5rem;
-  }
-
-  .info-section {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: #e8f5e9;
-  }
-
-  .info-section h2 {
-    font-size: 2rem;
-    color: var(--color4);
+    font-size: 4rem; /* Ícone maior */
+    color: white;
     margin-bottom: 1rem;
   }
 
-  .info-section p {
-    font-size: 1.2rem;
-    color: var(--color5);
-    line-height: 1.6;
+  /* Estilos para a seção de informações adicionais */
+  .info-section {
+    padding: 4rem 2rem; /* Espaço maior */
+    background-color: #3e4e56; /* Fundo escuro */
+    text-align: center;
+    color: white;
   }
 
+  .info-section h2 {
+    font-size: 2.5rem; /* Título maior */
+    margin-bottom: 1.5rem;
+  }
+
+  .info-section p {
+    font-size: 1.2rem; /* Texto maior */
+    max-width: 600px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+  }
   .selection-form {
     display: flex;
     justify-content: center;
