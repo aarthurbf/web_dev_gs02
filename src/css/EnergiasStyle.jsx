@@ -31,7 +31,7 @@ export const EnergiasStyle = styled.section`
   }
 
   .produto-item {
-    max-width: 30rem;
+    max-width: 25rem;
     text-align: center;
     display: flex;
     flex-direction: column;

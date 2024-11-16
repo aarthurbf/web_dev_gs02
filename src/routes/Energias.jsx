@@ -1,8 +1,8 @@
 import { EnergiasStyle } from "../css/EnergiasStyle";
-import EolicaImg from "../assets/images/eolica.png";
-import SolarImg from "../assets/images/solar.png";
-import HidraulicaImg from "../assets/images/hidraulica.png";
-import NuclearImg from "../assets/images/nuclear.png";
+import EolicaImg from "../assets/images/eolica.jpg";
+import SolarImg from "../assets/images/solar.jpg";
+import HidraulicaImg from "../assets/images/hidroeletrica.jpg";
+import NuclearImg from "../assets/images/nuclear.jpg";
 
 const energySources = [
   {
