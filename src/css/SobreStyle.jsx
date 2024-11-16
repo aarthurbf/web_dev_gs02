@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const SobreStyle = styled.section`
+  *{
+    background-color: var(--color6)
+  }
+
   .heading-sobre {
     width: 90%;
     display: flex;

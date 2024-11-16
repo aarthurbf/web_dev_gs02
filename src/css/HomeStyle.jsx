@@ -116,40 +116,39 @@ export const HomeStyle = styled.section`
   }
 
   .highlight {
-    background-color: var(--color4); /* Fundo colorido */
-    padding: 8rem; /* Espaço maior */
+    background-color: var(--color4); 
+    padding: 8rem; 
     text-align: center;
-    color: white; /* Texto branco */
+    color: white; 
   }
 
   .highlight h2 {
-    font-size: 2.3rem; /* Título maior */
+    font-size: 2.3rem; 
     margin-bottom: 5rem;
     color: white;
   }
 
   .highlight-content {
-    display: flex; /* Alinha os elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
-    justify-content: center; /* Centraliza os elementos */
-    gap: 2rem; /* Espaçamento entre os elementos */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem; 
   }
 
   .highlight-content div {
-    max-width: 250px; /* Limita a largura dos itens */
+    max-width: 250px;
     text-align: center;
   }
 
   .highlight-content .icon {
-    font-size: 4rem; /* Ícone maior */
+    font-size: 4rem; 
     color: white;
     margin-bottom: 1rem;
   }
 
-  /* Estilos para a seção de informações adicionais */
   .info-section {
-    padding: 4rem 2rem; /* Espaço maior */
-    background-color: #3e4e56; /* Fundo escuro */
+    padding: 4rem 2rem; 
+    background-color: var(--color3); 
     text-align: center;
     color: white;
   }
