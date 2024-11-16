@@ -1,4 +1,5 @@
 import { EnergiasStyle } from "../css/EnergiasStyle";
+import { Link } from "react-router-dom";
 import EolicaImg from "../assets/images/eolica.jpg";
 import SolarImg from "../assets/images/solar.jpg";
 import HidraulicaImg from "../assets/images/hidroeletrica.jpg";
@@ -9,25 +10,25 @@ const energySources = [
     img: EolicaImg,
     title: "Energia Eólica",
     description: "A energia eólica utiliza a força do vento para gerar eletricidade de forma limpa e renovável.",
-    link: "#"
+    link: "/energieolica"
   },
   {
     img: SolarImg,
     title: "Energia Solar",
     description: "A energia solar aproveita a luz do sol para produzir eletricidade ou calor, sendo uma das fontes mais sustentáveis.",
-    link: "#"
+    link: "/energiasolar"
   },
   {
     img: HidraulicaImg,
     title: "Energia Hidráulica",
     description: "A energia hidráulica utiliza o movimento da água, como em rios e barragens, para gerar eletricidade.",
-    link: "#"
+    link: "/energiahidraulica"
   },
   {
     img: NuclearImg,
     title: "Energia Nuclear",
     description: "A energia nuclear utiliza reações atômicas para gerar grandes quantidades de energia de forma contínua.",
-    link: "#"
+    link: "/energianuclear"
   }
 ];
 
@@ -42,9 +43,9 @@ const Energias = () => {
               <img src={source.img} alt={source.title} />
               <h3>{source.title}</h3>
               <p>{source.description}</p>
-              <a href={source.link} className="btn">
+              <Link to={source.link} className="btn">
                 Saiba mais
-              </a>
+              </Link>
             </div>
           ))}
         </div>
