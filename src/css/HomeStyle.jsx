@@ -78,7 +78,7 @@ export const HomeStyle = styled.section`
   }
 
   .produto-item {
-    max-width: 25rem;
+    max-width: 22rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -113,6 +113,50 @@ export const HomeStyle = styled.section`
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
+  }
+
+  .highlight {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    height: 30rem;
+    width: 100%;
+  }
+
+  .highlight h2 {
+    font-size: 2rem;
+    color: var(--color5);
+    margin-bottom: 1.5rem;
+  }
+
+  .highlight-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .highlight-content .icon {
+    font-size: 3rem;
+    color: var(--color4);
+    margin-bottom: 0.5rem;
+  }
+
+  .info-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #e8f5e9;
+  }
+
+  .info-section h2 {
+    font-size: 2rem;
+    color: var(--color4);
+    margin-bottom: 1rem;
+  }
+
+  .info-section p {
+    font-size: 1.2rem;
+    color: var(--color5);
+    line-height: 1.6;
   }
 
   @media screen and (max-width: 768px) {

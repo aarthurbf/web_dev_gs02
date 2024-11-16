@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HomeStyle } from "../css/HomeStyle";
+import { FaLeaf, FaWind, FaSolarPanel, FaWater } from "react-icons/fa";
 import EolicaImg from "../assets/images/eolica.jpg";
 import SolarImg from "../assets/images/solar.jpg";
 import HidraulicaImg from "../assets/images/hidroeletrica.jpg";
@@ -50,26 +51,48 @@ const Home = () => {
 
   return (
     <HomeStyle>
-        
-        <div className="slideshow-container">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`slide ${index === currentIndex ? "active" : ""}`}
-            >
-              <img src={image} alt={`Slide ${index}`} />
-            </div>
-          ))}
-          <button className="prev" onClick={() => changeSlide("prev")}>
-            ❮
-          </button>
-          <button className="next" onClick={() => changeSlide("next")}>
-            ❯
-          </button>
+      <div className="slideshow-container">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`slide ${index === currentIndex ? "active" : ""}`}
+          >
+            <img src={image} alt={`Slide ${index}`} />
+          </div>
+        ))}
+        <button className="prev" onClick={() => changeSlide("prev")}>
+          ❮
+        </button>
+        <button className="next" onClick={() => changeSlide("next")}>
+          ❯
+        </button>
+      </div>
+
+      {/* Seção destacada */}
+      <section className="highlight">
+        <h2>A Importância das Fontes de Energia Sustentáveis</h2>
+        <div className="highlight-content">
+          <div>
+            <FaWind className="icon" />
+            <p>Energia Eólica: Aproveitando o vento de forma renovável.</p>
+          </div>
+          <div>
+            <FaSolarPanel className="icon" />
+            <p>Energia Solar: Transformando luz do sol em energia limpa.</p>
+          </div>
+          <div>
+            <FaWater className="icon" />
+            <p>Energia Hidráulica: Gerando energia com o movimento da água.</p>
+          </div>
+          <div>
+            <FaLeaf className="icon" />
+            <p>Impacto positivo no meio ambiente e no futuro.</p>
+          </div>
         </div>
+      </section>
 
+      {/* Cards de energia */}
       <section>
-
         <h2 className="produto-title">Fontes de Energia Sustentáveis</h2>
         <div className="produto-list">
           {energySources.map((source, index) => (
@@ -83,6 +106,17 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Seção de informações adicionais */}
+      <section className="info-section">
+        <h2>Por Que Escolher Energias Renováveis?</h2>
+        <p>
+          As fontes de energia sustentáveis são essenciais para reduzir o
+          impacto ambiental, combater as mudanças climáticas e garantir um
+          futuro mais seguro para as próximas gerações. Elas também promovem a
+          independência energética e incentivam a inovação tecnológica.
+        </p>
       </section>
     </HomeStyle>
   );
