@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { ErrorStyle } from '../css/ErrorStyle';
+import { Link } from "react-router-dom";
+import { ErrorStyle } from "../css/ErrorStyle";
 
 const Error = () => {
   return (

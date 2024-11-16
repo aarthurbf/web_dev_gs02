@@ -24,7 +24,7 @@ const Login = () => {
       alert("Login bem-sucedido!");
 
       let token =
-        Math.random().toString(16).substring(2) + toString(16).substring(2)
+        Math.random().toString(16).substring(2) + toString(16).substring(2);
 
       sessionStorage.setItem("user", encrypt(email));
       sessionStorage.setItem("password", token);
@@ -54,8 +54,12 @@ const Login = () => {
             <header>Login</header>
             {isLoggedIn ? (
               <div className="welcome-container">
-                <h2 className="welcome-message">Bem-vindo, {decrypt(sessionStorage.getItem("user"))}!</h2>
-                <button className="logout-button" onClick={handleLogout}>Logout</button>
+                <h2 className="welcome-message">
+                  Bem-vindo, {decrypt(sessionStorage.getItem("user"))}!
+                </h2>
+                <button className="logout-button" onClick={handleLogout}>
+                  Logout
+                </button>
               </div>
             ) : (
               <form onSubmit={handleLogin}>

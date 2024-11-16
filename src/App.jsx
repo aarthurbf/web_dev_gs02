@@ -1,9 +1,8 @@
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import { Outlet } from 'react-router-dom'
-import GlobalStyle from "./css/GlobalStyle.jsx"
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
+import GlobalStyle from "./css/GlobalStyle.jsx";
 function App() {
-
   return (
     <>
       <GlobalStyle />
@@ -11,7 +10,7 @@ function App() {
       <Outlet />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -38,11 +38,11 @@ const Nuclear = () => {
           <h1 className="selection-title">IMPACTOS</h1>
           <p className="selection-text">
             A energia nuclear apresenta benefícios significativos em termos de
-            emissões quase nulas de carbono e produção confiável. No entanto,
-            os desafios incluem a gestão de resíduos radioativos e os altos
-            custos iniciais de construção das usinas. Com tecnologia avançada,
-            esses desafios estão sendo abordados com soluções como reatores de
-            próxima geração e reciclagem de combustível.
+            emissões quase nulas de carbono e produção confiável. No entanto, os
+            desafios incluem a gestão de resíduos radioativos e os altos custos
+            iniciais de construção das usinas. Com tecnologia avançada, esses
+            desafios estão sendo abordados com soluções como reatores de próxima
+            geração e reciclagem de combustível.
           </p>
         </div>
         <div className="selection-container">

@@ -1,8 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ErrorStyle = styled.section`
-  
-  *{
+  * {
     font-family: Arial, sans-serif;
   }
 

@@ -46,7 +46,7 @@ export const LoginStyle = styled.section`
   .field input {
     outline: none;
     padding: 0 15px;
-    border: 1px solid #CACACA;
+    border: 1px solid #cacaca;
   }
   .field input:focus {
     border-bottom-width: 2px;
@@ -63,8 +63,8 @@ export const LoginStyle = styled.section`
   .welcome-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    margin: 20px 0; 
+    align-items: center;
+    margin: 20px 0;
   }
   .welcome-message {
     font-size: 20px;
@@ -74,18 +74,18 @@ export const LoginStyle = styled.section`
   }
   .logout-button {
     color: #fff;
-    background-color: #e74c3c; 
+    background-color: #e74c3c;
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border-radius: 6px;
     text-align: center;
     font-size: 16px;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
   .logout-button:hover {
-    background-color: #c0392b; 
+    background-color: #c0392b;
   }
   .form-link {
     text-align: center;

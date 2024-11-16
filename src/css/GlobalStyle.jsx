@@ -25,6 +25,6 @@ const GlobalStyle = createGlobalStyle`
         --color7: #fff;
         --transition: 0.5s;
     }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
