@@ -12,11 +12,11 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/data/energySources.json"); 
+      const response = await fetch("/data/energySources.json");
       const data = await response.json();
       setEnergySources(data);
     };
-    
+
     fetchData();
   }, []);
 
@@ -36,22 +36,16 @@ const Home = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Pega os dados já existentes no localStorage ou cria um array vazio
     const dadosExistentes = JSON.parse(localStorage.getItem("produto")) || [];
 
-    // Cria o novo item a ser adicionado
     const novoItem = { nome, email };
 
-    // Atualiza o array de produtos com o novo item
     const dadosAtualizados = [...dadosExistentes, novoItem];
 
-    // Salva os dados atualizados no localStorage
     localStorage.setItem("produto", JSON.stringify(dadosAtualizados));
 
-    // Exibe o alerta
     alert("Email enviado com sucesso");
 
-    // Limpa os campos após o envio
     setNome("");
     setEmail("");
   };
@@ -75,7 +69,6 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Seção destacada */}
       <section className="highlight">
         <h2>A Importância das Fontes de Energia Sustentáveis</h2>
         <div className="highlight-content">
@@ -98,7 +91,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Cards de energia */}
       <section>
         <h2 className="produto-title">Fontes de Energia Sustentáveis</h2>
         <div className="produto-list">
@@ -115,7 +107,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Seção de informações adicionais */}
       <section className="info-section">
         <h2>Por Que Escolher Energias Renováveis?</h2>
         <p>

@@ -66,7 +66,6 @@ export const SobreStyle = styled.section`
     line-height: 1.5;
   }
 
-  /*Responsividade*/
 
   @media screen and (max-width: 768px) {
     .heading-sobre {

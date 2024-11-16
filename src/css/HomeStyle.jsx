@@ -220,7 +220,6 @@ export const HomeStyle = styled.section`
     background: var(--color5);
   }
 
-  /* Responsividade */
   @media screen and (max-width: 768px) {
     .produto-item {
       max-width: 25rem;
