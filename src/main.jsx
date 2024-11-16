@@ -9,6 +9,7 @@ import Car from './routes/Car.jsx'
 import Energias from './routes/Energias.jsx'
 import Eolica from './routes/Eolica.jsx'
 import Solar from './routes/Solar.jsx'
+import Hidraulica from './routes/Hidraulica.jsx'
 import Selection from './routes/Selection.jsx'
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: '/energias', element: <Energias /> },
       { path: '/energiaeolica', element: <Eolica/>},
       { path: '/energiasolar', element: <Solar/>},
+      { path: '/energiahidraulica', element: <Hidraulica/>},
       { path: '/selection', element: <Selection /> },
     ]
   }
