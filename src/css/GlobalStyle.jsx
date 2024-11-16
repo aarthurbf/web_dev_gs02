@@ -16,11 +16,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --color1: #000000;
-        --color2: #3F0000;
-        --color3: #7F0000;
-        --color4: #B40000;
-        --color5: #FF0000;
+        --color1: #040D09;
+        --color2: #11261A;
+        --color3: #1E402D;
+        --color4: #2A593E;
+        --color5: #9CA6A0;
         --color6: #EBEBF2;
         --color7: #fff;
         --transition: 0.5s;
