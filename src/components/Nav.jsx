@@ -23,10 +23,7 @@ const Nav = () => {
                     </div>
                     <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
                         <li className='link'>
-                            <Link to="/car" className='name' onClick={handleMenuToggle}>Carro</Link>
-                        </li>
-                        <li className='link'>
-                            <Link to="/selection" className='name' onClick={handleMenuToggle}>Seleção</Link>
+                            <Link to="/sobre" className='name' onClick={handleMenuToggle}>Sobre</Link>
                         </li>
                         <li className='link'>
                             <Link to="/login" className='name' onClick={handleMenuToggle}>
