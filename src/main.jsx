@@ -6,7 +6,6 @@ import Home from './routes/Home.jsx'
 import Login from './routes/Login.jsx'
 import Error from './routes/Error.jsx'
 import Car from './routes/Car.jsx'
-import Energias from './routes/Energias.jsx'
 import Eolica from './routes/Eolica.jsx'
 import Solar from './routes/Solar.jsx'
 import Hidraulica from './routes/Hidraulica.jsx'
@@ -23,7 +22,6 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login /> },
       { path: '/car', element: <Car /> },
-      { path: '/energias', element: <Energias /> },
       { path: '/energiaeolica', element: <Eolica/>},
       { path: '/energiasolar', element: <Solar/>},
       { path: '/energiahidraulica', element: <Hidraulica/>},
