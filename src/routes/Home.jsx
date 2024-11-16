@@ -49,6 +49,32 @@ const Home = () => {
         : (prevIndex - 1 + images.length) % images.length
     );
 
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Pega os dados já existentes no localStorage ou cria um array vazio
+    const dadosExistentes = JSON.parse(localStorage.getItem("produto")) || [];
+
+    // Cria o novo item a ser adicionado
+    const novoItem = { nome, email };
+
+    // Atualiza o array de produtos com o novo item
+    const dadosAtualizados = [...dadosExistentes, novoItem];
+
+    // Salva os dados atualizados no localStorage
+    localStorage.setItem("produto", JSON.stringify(dadosAtualizados));
+
+    // Exibe o alerta
+    alert("Email enviado com sucesso");
+
+    // Limpa os campos após o envio
+    setNome("");
+    setEmail("");
+  };
+
   return (
     <HomeStyle>
       <div className="slideshow-container">
@@ -118,6 +144,25 @@ const Home = () => {
           independência energética e incentivam a inovação tecnológica.
         </p>
       </section>
+
+      <div className="selection-form">
+        <form className="form" onSubmit={handleSubmit}>
+          <h2>Mais informações</h2>
+          <input
+            placeholder="Escreva seu nome"
+            aria-label="Nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+          />
+          <input
+            placeholder="Informe seu email"
+            aria-label="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </HomeStyle>
   );
 };

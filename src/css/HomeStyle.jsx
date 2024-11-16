@@ -159,6 +159,61 @@ export const HomeStyle = styled.section`
     line-height: 1.6;
   }
 
+  .selection-form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    background: var(--color7);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  }
+
+  .form h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color3);
+    border-bottom: 2px solid var(--color2);
+    padding-bottom: 0.5rem;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    outline: none;
+    transition: border 0.3s, background 0.3s;
+  }
+
+  .form input {
+    background: none;
+    border: 2px solid var(--color6);
+    color: var(--color1);
+  }
+
+  .form input:focus {
+    border-color: var(--color4);
+  }
+
+  .form button {
+    margin-top: 1.5rem;
+    background: var(--color2);
+    border: none;
+    color: var(--color7);
+    cursor: pointer;
+  }
+
+  .form button:hover {
+    background: var(--color5);
+  }
+
   @media screen and (max-width: 768px) {
     .produto-item {
       max-width: 25rem;
